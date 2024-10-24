@@ -21,7 +21,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "users_tb")
-public class User implements UserDetails {
+public class UserModel implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

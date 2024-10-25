@@ -27,8 +27,6 @@ public class UserModel implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer internalUserID;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(unique = true, nullable = false)
     private UUID externalUserID;
 
